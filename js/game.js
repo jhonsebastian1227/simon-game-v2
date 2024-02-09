@@ -35,6 +35,8 @@ function animation(value = "", valueType, time, keyRandom){
 // funcion para comenzar el juego con tecla o boton
 function startGame(event) {
     if(start === "closed" && (event.key === "a" || event.key === "A" || event === "start")){
+        filledListBtn = [];
+        randomList = [];
         start = "open";
         animation("", "animation", 200, true);
         sounds(randomList[0]);
