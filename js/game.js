@@ -65,9 +65,8 @@ $(".play-btn").click(function(){
 // eventos botones
 $(".btn").on("click", function() {
     
-    count++;
-    
     if (start === "open") {
+        count++;
         filledListBtn.push(this.id);
         animation("." + this.id, "pressed", 200, false);
         sounds(this.id);
@@ -92,7 +91,7 @@ $(".btn").on("click", function() {
         }, 500);
     }
 
-    else{
+    if (start === "closed"){
         count = -1;
     }
 });
