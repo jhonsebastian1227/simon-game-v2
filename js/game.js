@@ -57,7 +57,7 @@ $(document).keypress(function(event){
 });
 
 // boton
-$(".play-btn").on("click", function(){
+$(".play-btn").click(function(){
     startGame("start");
 });
 
