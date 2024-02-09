@@ -16,13 +16,14 @@ function sounds(value) {
 function animation(value = "", valueType, time, keyRandom){
     // Número aleatorio
     if (keyRandom === true) {
-        countLevel++;
-        if (start == "open") {
-            $("h1").text("Level " + countLevel);
-        }
         numberRandom = Math.floor(Math.random() * 4);
         randomList.push(colorList[numberRandom]);
         value = "." + randomList[randomList.length - 1];
+        countLevel++;
+        if (start == "open") {
+            $("h1").text("Level " + countLevel);
+            sounds(colorList[numberRandom]);
+        }
     }
     
     // Animación
@@ -77,7 +78,7 @@ $(".btn").on("click", function() {
     }
     
     if (start === "newGame") {
-        $("h1").text('Game Over, Press play to Start');
+        $("h1").text("Game Over");
         animation("body", "game-over", 200, false);
         animation("." + this.id, "pressed", 200, false);
         sounds("wrong");
@@ -88,7 +89,7 @@ $(".btn").on("click", function() {
         filledListBtn = [];
         setTimeout(function() {
             animation("", "animation", 200, true);
-        }, 500);
+        }, 700);
     }
 
     if (start === "closed"){
