@@ -35,6 +35,7 @@ function animation(value = "", valueType, time, keyRandom){
 // funcion para comenzar el juego con tecla o boton
 function startGame(event) {
     if(start === "closed" && (event.key === "a" || event.key === "A" || event === "start")){
+        count = -1;
         start = "open";
         animation("", "animation", 200, true);
         sounds(randomList[0]);
@@ -63,9 +64,10 @@ $(".play-btn").click(function(){
 
 // eventos botones
 $(".btn").on("click", function() {
-
+    
+    count++;
+    
     if (start === "open") {
-        count++;
         filledListBtn.push(this.id);
         animation("." + this.id, "pressed", 200, false);
         sounds(this.id);
