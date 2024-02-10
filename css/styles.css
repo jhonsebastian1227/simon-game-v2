@@ -133,19 +133,16 @@ img{
 }
 
 @media (min-width: 319px) and (max-width: 1080px) {
-  p{
-    font-size: 2rem;
-  }
   #level-title{
     font-size: 5em;
-    margin: 5rem 1rem 2.5rem 1rem;
+    margin: 10rem 1rem 5rem 1rem;
   }
 
   .play-btn{
     font-size: 5rem;
     height: 10rem;
     width: 30rem;
-    margin: 2.5rem 0rem 5rem 0rem;
+    margin: 5rem 0rem 10rem 0rem;
   }
 
   .btn {
@@ -154,6 +151,11 @@ img{
   }
 
   .container-text{
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+
+  img{
+    height: 4rem;
+    width: 4rem;
   }
 }
