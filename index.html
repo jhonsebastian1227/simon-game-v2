@@ -6,38 +6,74 @@
     <title>Simon</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    
+    <div class="menu">
+        <div class="menu-toggle"><img id="image" src="./images/inf.svg" alt="inf"></div>
+        <div class="menu-content">
+            <div class="container-text">
+                <strong>Instrucciones para jugar Simon:</strong>
+                <br><br>
+                <strong>1. Objetivo:</strong> Repite la secuencia de luces y sonidos generada por la computadora.
+                <br><br>
+                <strong>2. Cómo jugar:</strong>
+                <ul>
+                    <li>Presiona "Play" para comenzar.</li>
+                    <li>Observa y escucha la secuencia.</li>
+                    <li>Repite la secuencia presionando los botones en el mismo orden.</li>
+                </ul>
+                <br>
+                <strong>3. Botones:</strong>
+                <ul>
+                    <li>Los botones de colores representan la secuencia.</li>
+                    <li>Hay cuatro colores: rojo, verde, azul y amarillo.</li>
+                </ul>
+                <br>
+                <strong>4. Ganar:</strong>
+                <ul>
+                    <li>Continúa repitiendo la secuencia correctamente.</li>
+                    <li>Si te equivocas, el juego termina.</li>
+                </ul>
+                <br>
+                ¡Eso es todo! Presta atención, recuerda la secuencia y desafía tu memoria. ¡Buena suerte!
+            </div>
+        </div>
+    </div>
+    
+
     <h1 id="level-title">Press play to Start</h1>
     
     <div class="container-btn">
-      <button id="play" class="play-btn play">PLAY</button>
+        <button id="play" class="play-btn play">PLAY</button>
     </div>
     
-    <div class="container">
+    <div type="button" class="container-btns">
       
-      <div lass="row">
+        <div lass="row">
 
-        <div type="button" id="green" class="btn green">
-        </div>
-        <div type="button" id="red" class="btn red">
-        </div>
+            <div type="button" id="green" class="btn green">
+            </div>
+            <div type="button" id="red" class="btn red">
+            </div>
 
-      </div>
-
-      <div class="row">
-
-        <div type="button" id="yellow" class="btn yellow">
-        </div>
-        <div type="button" id="blue" class="btn blue">
         </div>
 
-      </div>
+        <div class="row">
 
+            <div type="button" id="yellow" class="btn yellow">
+            </div>
+            <div type="button" id="blue" class="btn blue">
+            </div>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./js/game.js" charset="utf-8"></script>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/game.js" charset="utf-8"></script>
 </body>
 </html>

@@ -63,6 +63,18 @@ $(".play-btn").click(function(){
     startGame("start");
 });
 
+// instruciones
+$(".menu-toggle").click(function(){
+    $(".menu-content").slideToggle();
+
+    var imagenActual = $(this).find('img').attr('src');
+    if(imagenActual === './images/inf.svg') {
+        $(this).find('img').attr('src', './images/x.svg');
+    } else {
+        $(this).find('img').attr('src', './images/inf.svg');
+    }
+});
+
 // eventos botones
 $(".btn").on("click", function() {
     
