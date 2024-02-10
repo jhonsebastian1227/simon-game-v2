@@ -43,6 +43,7 @@ img{
 .container-text{
   display: flex;
   flex-direction: column;
+  font-size: 1rem;
   margin: 1rem 0rem 0rem 0rem ;
 }
 
@@ -150,5 +151,9 @@ img{
   .btn {
     height: 20rem;
     width: 20rem;
-  }  
+  }
+
+  .container-text{
+    font-size: 2rem;
+  }
 }
